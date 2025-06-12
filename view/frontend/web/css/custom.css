@@ -1,0 +1,48 @@
+.desc12 p {
+    margin: -18px 255px 44px;
+    font-size:13px;
+    color: #333333;
+}
+form.custom_form {
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+
+
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type*="date"], input[type="email"] {
+height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 14px;
+}
+
+textarea#specialRequest {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.field.customl {
+    padding: 6px 7px 9px 4px;
+}
+
+
+button.action.primary {
+    /* padding: 0 0 13px 130px; */
+    background: #222;
+    font-size: 15px;
+    padding: 15px 0px;
+    font-weight: 900;
+    margin-top: 23px;
+    border-radius: 0px;
+    width: 630px;
+    height: 53px;
+}
