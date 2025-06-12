@@ -19,42 +19,44 @@
 
     <div class="col-6">
         <!-- الفورم هنا -->
-       <form class="custom_form" enctype="multipart/form-data" method="post" action="<?= $block->getUrl('special-price/index/save') ?>">
+      <form class="custom_form" enctype="multipart/form-data" method="post" action="<?= $block->getUrl('special-price/index/save') ?>">
+    <?= $block->getBlockHtml('formkey'); ?>
 
-            <div class="field">
-                <label for="fullName"><?= __('Full Name')?></label>
-                <input type="text" name="fullName" id="fullName" required>
-            </div>
+    <div class="field">
+        <label for="fullName"><?= __('Full Name')?></label>
+        <input type="text" name="fullName" id="fullName" required>
+    </div>
 
-            <div class="field">
-                <label for="entityName"><?= __('Entity name')?></label>
-                <input type="text" name="entityName" id="entityName">
-            </div>
+    <div class="field">
+        <label for="entityName"><?= __('Entity name')?></label>
+        <input type="text" name="entityName" id="entityName">
+    </div>
 
-            <div class="field">
-                <label for="email"><?= __('Email address')?></label>
-                <input type="email" name="email" id="email" required>
-            </div>
+    <div class="field">
+        <label for="email"><?= __('Email address')?></label>
+        <input type="email" name="email" id="email" required>
+    </div>
 
-            <div class="field">
-                <label for="phone"><?= __('Phone')?></label>
-                <input type="tel" name="phone" id="phone">
-            </div>
+    <div class="field">
+        <label for="phone"><?= __('Phone')?></label>
+        <input type="tel" name="phone" id="phone">
+    </div>
 
-            <div class="field">
-                <label for="specialRequest"><?= __('Special request')?></label>
-                <textarea name="specialRequest" id="specialRequest" rows="4"></textarea>
-            </div>
+    <div class="field">
+        <label for="specialRequest"><?= __('Special request')?></label>
+        <textarea name="specialRequest" id="specialRequest" rows="4"></textarea>
+    </div>
 
-            <div class="field customl">
-                <label for="attachment"><?= __('Attach your file(photo, excel, word or pdf)')?> </label><br>
-                <input type="file" name="attachment[]" id="attachment" multiple>
-            </div>
+    <div class="field customl">
+        <label for="attachment"><?= __('Attach your file (photo, excel, word or pdf)')?></label><br>
+        <input type="file" name="attachment[]" id="attachment" multiple>
+    </div>
 
-            <div class="actions newb">
-                <button type="submit" class="action primary"><?= __('Send')?></button>
-            </div>
-        </form>
+    <div class="actions newb">
+        <button type="submit" class="action primary"><?= __('Send')?></button>
+    </div>
+</form>
+
     </div>
 </div>
 
